@@ -1,22 +1,20 @@
 from __future__ import absolute_import
-from __future__ import print_function, unicode_literals
+from __future__ import print_function
+from __future__ import unicode_literals
 
 import codecs
+import glob
 import os
+from pprint import pprint
 import sys
 import threading
-import glob
+import urllib.request
 
 import esptool
-
 import serial
-
 from serial.tools.list_ports import comports
 from serial.tools import hexlify_codec
 
-
-from pprint import pprint
-import urllib.request
 
 dev = False
 spiffs = True
